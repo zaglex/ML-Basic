@@ -1,18 +1,18 @@
 ### Домашнее задание "Классы"
 
 > **Важно:** импортируйте модули и классы относительно корня проекта, а не папки с домашкой. 
-> То есть импорт исключений должен выглядеть так `from homework_02.exceptions import LowFuelError, NotEnoughFuel` 
-> или так `from homework_02 import exceptions`,
+> То есть импорт исключений должен выглядеть так `from homework_06.exceptions import LowFuelError, NotEnoughFuel` 
+> или так `from homework_06 import exceptions`,
 > (а не так `from exceptions import LowFuelError, NotEnoughFuel`, и не так `import exceptions`).
 > 
-> Соответственно, импорт других классов тоже будет выглядеть так `from homework_02.base import Vehicle`, 
+> Соответственно, импорт других классов тоже будет выглядеть так `from homework_06.base import Vehicle`, 
 > **но не так** `from base import Vehicle`.
 
 > Не делайте переопределение методов, например `__init__`, если внутри единственная строчка — это вызов родительского метода с теми же аргументами `super().__init__(...)`. Эта запись не несёт смысловой нагрузки (переопределить метод, чтобы вызвать родительский, с теми же аргументами). 
 > Есть смысл переопределять методы только если вы меняете их поведение (добавляете новые аргументы, устанавливаете новые свойства).
 
 #### Задача:
-- скопируйте папку `homework_02` для этой домашки (Памятка: https://github.com/OtusTeam/BasePython/tree/homeworks)
+- скопируйте папку `homework_06` для этой домашки (Памятка: https://github.com/OtusTeam/BasePython/tree/homeworks)
 - в модуле `exceptions` объявите следующие исключения:
     - `LowFuelError`
     - `NotEnoughFuel`
@@ -37,4 +37,4 @@
     - объявите метод `load_cargo`, который принимает число, проверяет, что в сумме с текущим `cargo` не будет перегруза, и обновляет значение, в ином случае выкидывает исключение `exceptions.CargoOverload`
     - объявите метод `remove_all_cargo`, который обнуляет значение `cargo` и возвращает значение `cargo`, которое было до обнуления
 #### Критерии оценки:
-- автоматический тест `test_homework_02` проходит
+- автоматический тест `test_homework_06` проходит
